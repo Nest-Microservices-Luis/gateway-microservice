@@ -17,8 +17,6 @@ export class RpcCustomExceptionFilter implements ExceptionFilter<RpcException> {
       });
     }
 
-    console.log(name);
-
     if (
       typeof rpcError === 'object' && 
       'status' in rpcError && 
